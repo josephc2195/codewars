@@ -1,3 +1,4 @@
+#https://www.codewars.com/kata/52685f7382004e774f0001f7
 def make_readable(seconds):
     s = seconds % 60
     m = int((seconds - s) / 60 % 60)

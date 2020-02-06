@@ -1,3 +1,4 @@
+#https://www.codewars.com/kata/52742f58faf5485cae000b9a
 intervals = [
     ['years', 31536000],  # 60 * 60 * 24 * 7
     ['days', 86400],    # 60 * 60 * 24
