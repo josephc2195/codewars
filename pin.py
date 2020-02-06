@@ -1,3 +1,4 @@
+#https://www.codewars.com/kata/5263c6999e0f40dee200059d/train/python
 def get_pins(observed):
     next = {
         '1': ['2', '4'],
@@ -11,6 +12,6 @@ def get_pins(observed):
         '9': ['6', '8'],
         '0': ['8'],
         }
-    lst=[[digit]+adjacent[digit] for digit in observed]
-    print(lst)
-    return lst
+    lst=[[digit]+next[digit] for digit in observed]
+
+    return
