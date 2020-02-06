@@ -12,6 +12,7 @@ def get_pins(observed):
         '9': ['6', '8'],
         '0': ['8'],
         }
-    lst=[[digit]+next[digit] for digit in observed]
+    if len(observed) == 1:
+        return next[observed] + [observed]
 
-    return
+    return [a + b for a in next[observed[0]] + [observed[0]] for b in get_pins(observed[1:])]
